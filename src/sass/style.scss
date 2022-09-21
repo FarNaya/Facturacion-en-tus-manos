@@ -1,0 +1,223 @@
+// $theme-colors: (
+//     "primary": blue,
+//     "dark": #000000
+// );
+
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "_variables";
+
+body{
+    font-family: $primary-font-family;
+}
+
+nav{
+    background-color: $darkgrey;
+    font-family:$secondary-font-family;
+
+    .navbar-toggler{
+        .fa-solid, .fa-bars{
+            color: $white;
+            font-size: 1.2em;
+        }
+    }
+
+    .navbar-collapse{
+        .navbar-nav{
+            .nav-item{
+                line-height: 4.5em;
+
+                a:hover{
+                    transform: scale(1.2);
+                    transition: .4s ease;
+                }
+
+                .nav-link, .btn{
+                    color: $white;
+                    font-size: 1em;
+                    letter-spacing: $alt-letter-spacing;
+                }
+
+                .btn{
+                    font-weight: bold;
+                    background-color: $darkgreen;
+                    border-color: $darkgreen;
+                }
+                
+                button:hover{
+                    transform: scale(1.2);
+                    transition: .4s ease;
+                }
+             
+                .fa-brands{
+                    font-size: 1.2em;
+                    color: $darkgrey;
+                    background-color: $white;
+                    width: 22px;
+                    height: 22px;
+                    padding-top: 2px;
+
+                    // .fa-brand:hover{
+                    //     transform: scale(2);
+                    //     transition: .4s ease;
+    
+                    // }
+                }
+
+                // i:hover{
+                //     transform: scale(1.2);
+                //     transition: .4s ease;
+                // }
+               
+            }
+        }
+    }
+}
+
+main{
+    .hero-section{
+        max-height: 100vh;
+        
+        .hero-background{
+            background-image: url(/img/jpg/herosection-background.jpg);
+            min-height: 36vh;
+            background-size: cover;
+            background-position: left center;
+
+            .hero-paragraph{
+                width: 200px;
+
+                .hero-paragraph-content{
+                    color: $white;
+                    font-size: .8em;
+                    font-family: $secondary-font-family;
+                    letter-spacing: $alt-letter-spacing;
+                }
+            }   
+        }
+
+        .hero-green-slide{
+            background-image: url(/img/svg/Asset-61.svg);
+            min-height: 36vh;
+            background-size: cover;
+            background-position: left center;
+            background-color: $darkgreen;
+            max-width: 100vw;
+            padding: 5em;
+        }
+
+        .hero-slide-logo{
+            width: 175px;
+        }
+
+        .btn-primary{
+            background-color: #ffdd00;
+            border-style:none;
+            font-family: $secondary-font-family;
+            font-size: .5em;
+            font-weight: bold;
+            color: black;
+        }
+}
+}
+
+// .footer {
+//     margin-top:3rem;
+// }
+
+// .navbar {
+//     border-bottom:1px solid #eee;
+// }
+
+
+
+// MEDIA QUERIES
+@media (min-width: 390px){
+    main{
+        .hero-section{
+            .hero-background{
+                min-height: 31vh;
+            }
+        }
+    }
+}
+
+// 
+@media (min-width: 768px){
+    main{
+        .hero-section{
+            .hero-background{
+                min-height: 35vh;
+
+                .hero-paragraph{
+                    width: 300px;
+                    .hero-icon{
+                        width: 25px;
+                    }
+
+                    .hero-paragraph-content{
+                        font-size: 1.1em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px){
+    nav{
+        img{
+            width: 140px;
+        }  
+    
+        .navbar-collapse{
+            .navbar-nav{
+                .nav-item{
+                    .nav-link{
+                        font-size: .75em;
+                    }
+    
+                    .btn{
+                        font-size: .6em;
+                    }
+
+                    .fa-brands{
+                        font-size: .85em;
+                        width: 18px;
+                        height: 18px;
+                        padding-top: 2px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px){
+    nav{
+        background-color: $darkgrey;
+        img{
+            width: 192px;
+        }  
+    
+        .navbar-collapse{
+            .navbar-nav{
+                .nav-item{
+                    .nav-link{
+                        font-size: .85em;
+                    }
+
+                    .btn{
+                        font-size: .8em;
+                    }
+
+                    .fa-brands{
+                        font-size: 1em;
+                        width: 20px;
+                        height: 20px;
+                        padding-top: 2px;
+                    }
+                }
+            }
+        }
+    }
+}

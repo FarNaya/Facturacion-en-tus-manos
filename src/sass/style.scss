@@ -78,12 +78,11 @@ main{
         }
 
         .hero-form{
-            min-height: 50vh;
+            height: 50vh;
             background-color: #e5e5e5;
         
             form{
                 font-size: .55em;
-                text-transform: uppercase;
 
                 .form-control{
                     padding: 0.3rem 0.75rem;
@@ -91,6 +90,7 @@ main{
                     border-style: none;
                     box-shadow: 0px 3px 2px 1px rgba(130,130,130,0.2);
                     margin-bottom: .3rem;
+                    font-family: $primary-font-family;
                 }
 
                 .btn-primary{
@@ -127,7 +127,7 @@ main{
         .hero-green-slide{
             // applies for both green slides on hero section
             background-image: url(/img/svg/Asset-61.svg);
-            min-height: 45vh;
+            height: 45vh;
             background-size: contain;
             background-position: left center;
             background-color: $darkgreen;
@@ -183,11 +183,23 @@ main{
 @media (min-width: 768px){
     main{
         .hero-section{
-            .hero-background{
-                min-height: 35vh;
+            .hero-form{
 
+                form{
+                    font-size: .9em;
+                    
+                    .form-control{
+                        padding: 0.6rem 0.75rem;
+                        font-size: 1rem;
+                        margin-bottom: .5rem;
+                    }
+                }
+            }
+
+            .hero-background{
                 .hero-paragraph{
                     width: 300px;
+
                     .hero-icon{
                         width: 25px;
                     }
@@ -228,6 +240,31 @@ main{
             }
         }
     }
+
+    main{
+        .hero-section{
+            max-height: 80vh;
+            .hero-form, .hero-green-slide, .hero-background{
+                min-height: 60vh;
+
+                form{
+                    font-size: .65em;
+                }
+
+                .form-control{
+                    padding: 0.3rem 0.75rem;
+                    font-size: .7rem;
+                    margin-bottom: .3rem;
+
+                }
+
+            }
+            // .hero-green-slide, {
+            //     min-height: 60vh;
+            // }        
+    }
+
+}
 }
 
 @media (min-width: 1200px){

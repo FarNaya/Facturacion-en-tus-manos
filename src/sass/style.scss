@@ -73,6 +73,10 @@ main{
         font-family: $secondary-font-family;
         letter-spacing: $alt-letter-spacing;
 
+        .row{
+            --bs-gutter-x:0;
+        }
+
         .hero-form{
             max-height: 50vh;
             background-color: #e5e5e5;
@@ -121,6 +125,7 @@ main{
         }
 
         .hero-green-slide{
+            // applies for both green slides on hero section
             background-image: url(/img/svg/Asset-61.svg);
             max-height: 50vh;
             background-size: contain;
@@ -128,6 +133,18 @@ main{
             background-color: $darkgreen;
             max-width: 100vw;
             padding: 5em;
+            color: white;
+            // 
+            mark{
+                background-color: #2d2a26;
+                
+                .hero-gratis{
+                    color: $white;
+                }
+
+                // .hero-icon-2
+            }
+            // 
         }
 
         .hero-slide-logo{

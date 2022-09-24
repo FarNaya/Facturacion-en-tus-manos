@@ -60,13 +60,17 @@
         <!-- -->
         <main>
             <section class="hero-section mb-4">
-                <div class="container-fluid position-relative">
-                    <div class="row">
-                        <div id="carouselExampleControls" class="carousel slide p-0" data-bs-interval="0">
-                            <!-- <div id="carouselExampleControls" class="carousel slide p-0" data-bs-ride="carousel"> -->
-                            <div class="carousel-inner">
-                                <div class="col-12">
-                                    <div class="carousel-item">
+                <div class="container-fluid position-relative p-0">
+                    <!-- <div class="row"> -->
+                    <!-- Ver tutorial sobre 'Forms', agregar 'H' tags al texto de la hero
+                    section buscar palabras claves -->
+                    <div id="carouselExampleControls" class="carousel carousel-dark slide p-0"
+                    data-bs-interval="0">
+                        <div class="carousel-inner">
+                            <!-- <div class="col-12"> -->
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-7 col-xl-7 order-lg-2 p-0">
                                         <div class="hero-background">
                                             <div class="hero-paragraph text-center pt-4 pt-md-5">
                                                 <img class="hero-icon" alt="" src="/img/svg/Asset-62.svg" width="16">
@@ -80,57 +84,70 @@ el timbrado
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="carousel-item active">
-                                        <div class="hero-form">
-                                            <form class="px-5 py-5">
-                                                <div class="mb-2">
-                                                    <!-- -->
-                                                    <label for="exampleInputText1" class="form-label">RFC:</label>
-                                                    <input type="text" class="form-control" id="exampleInputText1">
-                                                </div>
-                                                <!-- -->
-                                                <div class="mb-2">
-                                                    <label for="exampleInputText1" class="form-label">nombre o razón social:</label>
-                                                    <input type="text" class="form-control"
-                                                    id="exampleInputText1">
-                                                </div>
-                                                <div class="mb-2">
-                                                    <label for="exampleInputEmail1" class="form-label">Correo eléctronico:</label>
-                                                    <input type="email" class="form-control" id="exampleInputEmail1">
-                                                </div>
-                                                <div class="mb-2">
-                                                    <label for="exampleInputPassword1" class="form-label">contraseña:</label>
-                                                    <input type="password" class="form-control" id="exampleInputPassword1">
-                                                </div>
-                                                <div class="text-center mt-3">
-                                                    <button type="submit" class="btn btn-primary">Registrarte</button>
-                                                </div>
-                                            </form>
+                                    <div class="col-lg-5 col-xl-5 p-0 ">
+                                        <div class="hero-green-slide d-flex flex-column align-items-center justify-content-center">
+                                            <img class="hero-slide-logo py-4" src="/img/svg/logo-facturacion-en-tus-manos.svg"
+                                            alt="">
+                                            <button type="button" class="btn btn-primary my-4 text-uppercase">Prueba gratis</button>
                                         </div>
                                     </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                                    data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-
-                                        <span
-                                        class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                                    data-bs-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span>
-
-                                        <span
-                                        class="visually-hidden">Next</span>
-                                    </button>
-                                    <!-- </div> -->
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-12 p-0">
-                            <div class="hero-green-slide d-flex flex-column align-items-center justify-content-center">
-                                <img class="hero-slide-logo py-4" src="/img/svg/logo-facturacion-en-tus-manos.svg"
-                                alt="">
-                                <button type="button" class="btn btn-primary my-4 text-uppercase">Prueba gratis</button>
+                            <!-- slide 2 -->
+                            <div class="carousel-item active">
+                                <div class="hero-form">
+                                    <form class="px-5 py-5">
+                                        <div class="mb-2">
+                                            <label for="exampleInputText1" class="form-label">RFC:</label>
+                                            <input type="text" class="form-control" id="exampleInputText1">
+                                        </div>
+                                        <!-- -->
+                                        <div class="mb-2">
+                                            <label for="exampleInputText1" class="form-label">nombre o razón social:</label>
+                                            <input type="text" class="form-control"
+                                            id="exampleInputText1">
+                                        </div>
+                                        <div class="mb-2">
+                                            <label for="exampleInputEmail1" class="form-label">Correo eléctronico:</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1">
+                                        </div>
+                                        <div class="mb-2">
+                                            <label for="exampleInputPassword1" class="form-label">contraseña:</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                        </div>
+                                        <div class="text-center mt-3">
+                                            <button type="submit" class="btn btn-primary">Registrarte</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-lg-5 col-xl-5 p-0 ">
+                                    <div class="hero-green-slide d-flex flex-column align-items-center justify-content-center">
+                                        <div class="text-center">
+                                            <img class="hero-icon-2" alt="" src="/img/svg/Asset-63.svg" width="80">
+                                            <p class="hero-paragraph-content pt-1"><strong class="text-uppercase">Registrate</strong>
+                                                <br>es totalmente
+                                                <br>
+                                                <mark class="py-1 px-4"><strong class="text-uppercase hero-gratis">¡gratis!</strong>
+                                                </mark>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                                <span
+                                class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+                                <span
+                                class="visually-hidden">Next</span>
+                            </button>
                         </div>
+                        <!-- </div> -->
+                        <!-- </div> -->
                     </div>
                 </div>
             </section>

@@ -78,7 +78,7 @@ main{
         }
 
         .hero-form{
-            max-height: 50vh;
+            min-height: 50vh;
             background-color: #e5e5e5;
         
             form{
@@ -127,7 +127,7 @@ main{
         .hero-green-slide{
             // applies for both green slides on hero section
             background-image: url(/img/svg/Asset-61.svg);
-            max-height: 50vh;
+            min-height: 45vh;
             background-size: contain;
             background-position: left center;
             background-color: $darkgreen;
@@ -141,10 +141,7 @@ main{
                 .hero-gratis{
                     color: $white;
                 }
-
-                // .hero-icon-2
             }
-            // 
         }
 
         .hero-slide-logo{

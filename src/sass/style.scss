@@ -158,22 +158,22 @@ main{
         }
     }
 
-    .beneficios{
+    .seccion-beneficios{
         h4, h3{
             font-family: $secondary-font-family;
             font-weight: bold;
-            font-size: 1.2em;
+            font-size: 1.15em;
         }
 
         h3{
-            font-size: 1.4em;
+            font-size: 1.3em;
         }
         
         p{
-            width: 80vw;
+            width: 80%;
             margin: auto;
         }
-        
+
     }
 }
 
@@ -226,6 +226,27 @@ main{
             }
         }
     }
+
+
+    .seccion-beneficios{
+        // h4, h3{
+        //     font-family: $secondary-font-family;
+        //     font-weight: bold;
+        //     font-size: 1.15em;
+        // }
+
+        // h3{
+        //     font-size: 1.3em;
+        // }
+        
+        p{
+            width: 90%;
+            // font-size: 1em;
+            // margin: auto;
+        }
+
+    }
+    
 }
 
 @media (min-width: 992px){

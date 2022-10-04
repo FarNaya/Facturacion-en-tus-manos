@@ -157,6 +157,24 @@ main{
             color: black;
         }
     }
+
+    .beneficios{
+        h4, h3{
+            font-family: $secondary-font-family;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        h3{
+            font-size: 1.4em;
+        }
+        
+        p{
+            width: 80vw;
+            margin: auto;
+        }
+        
+    }
 }
 
 // .footer {
@@ -248,7 +266,6 @@ main{
                 form{
                     font-size: .6em;
                     // width: 500px;
-
                 }
 
                 .form-control{
@@ -259,9 +276,25 @@ main{
                 }
 
             }      
+        }
     }
-
 }
+
+@media (min-width: 1024px) and (min-height: 1366px) {
+    main{
+        .hero-section{
+            max-height: 50vh;
+
+            .hero-form, .hero-green-slide, .hero-background{
+                min-height: 40vh;
+            }
+
+            .hero-green-slide, .hero-form{
+                height: 40vh;
+            }
+
+        }
+    }
 }
 
 @media (min-width: 1200px){
@@ -289,6 +322,15 @@ main{
                         padding-top: 2px;
                     }
                 }
+            }
+        }
+    }
+    main{
+        .hero-section{
+            max-height: 80vh;
+
+            .hero-form, .hero-green-slide, .hero-background{
+                min-height: 70vh;
             }
         }
     }

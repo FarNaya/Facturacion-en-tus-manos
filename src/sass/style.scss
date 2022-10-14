@@ -222,9 +222,26 @@ main{
     
 } //end seccion precios y planes
 
+.logos{
+    background-color: #e5e5e5;
+    span{
+        display: inline-block;
+        height: 80px;
+        img{
+            object-fit: cover;
+        }
+    }
+    .width-a{
+        width: 30vw;
+    }
+    .width-b{
+        width:27vw;
+    }
 
-
-
+    .width-c{
+        width: 18vw;
+    }
+}
 
 
 // .footer {
@@ -298,7 +315,18 @@ main{
             }
     
         } //end seccion beneficios
-      
+
+// logos section
+        .logos{
+            .width-a{
+                width: 18vw;
+            }
+            .width-b, .width-c{
+                width:20vw;
+            }
+        } //end logos
+        
+        
     } //end main
     
 } //end query
@@ -351,26 +379,23 @@ main{
 
             }      
         }
-    }
+
+    // logos section
+        .logos{
+            .width-a{
+                width: 15vw;
+            }
+            .width-b{
+                width: 13vw;
+            } 
+            
+            .width-c{
+                width:10vw;
+            }
+        }//end logos
+
+    }//end main
 }
-
-// @media (min-width: 1024px) and (min-height: 1366px) {
-//     main{
-//         .hero-section{
-//             max-height: 50vh;
-
-//             .hero-form, .hero-green-slide, .hero-background{
-//                 min-height: 40vh;
-//             }
-
-//             .hero-green-slide, .hero-form{
-//                 min-height: 40vh;
-//             }
-
-//         }
-//     }
-// }
-
 @media (min-width: 1200px){
 
     nav{
@@ -401,6 +426,22 @@ main{
         }
     }
 
+    main{
+        .logos{
+            .width-a{
+                width: 10vw;
+            }
+            .width-b{
+                width: 9vw;
+            } 
+            
+            .width-c{
+                width:7vw;
+            }
+        }//end logos
+
+    } //end main
+
     // main{
     //     .hero-section{
     //         max-height: 80vh;
@@ -411,4 +452,6 @@ main{
     //     }
     // }
 }
-// }
+
+// @media (min-width: 1400px){
+//}

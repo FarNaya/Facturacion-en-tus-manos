@@ -122,7 +122,6 @@ main{
                 font-size: .8em;
                 text-shadow: 1px 2px 1px #4a4a4a;
             }
-
         }
     }
 
@@ -144,7 +143,6 @@ main{
                 color: $white;
             }
         }
-    // }
 
         .hero-slide-logo{
             width: 175px;
@@ -243,16 +241,26 @@ main{
     }
 }
 
-
-// .footer {
-//     margin-top:3rem;
-// }
-
-// .navbar {
-//     border-bottom:1px solid #eee;
-// }
-
 }//end main
+
+// FOOTER
+footer{
+    background-color: $darkgrey;
+    p{
+        color: $white;
+    }
+    text-decoration: none;
+ .fa-brands{
+                    font-size: 1.2em;
+                    color: $darkgrey;
+                    background-color: $white;
+                    width: 22px;
+                    height: 22px;
+                    padding-top: 2px;
+    
+
+}
+}
 
 // MEDIA QUERIES
 // @media (min-width: 390px){
@@ -296,24 +304,10 @@ main{
             }
         } //end hero section
 
-        .seccion-beneficios{
-            
-            // h4, h3{
-            //     font-family: $secondary-font-family;
-            //     font-weight: bold;
-            //     font-size: 1.15em;
-            // }
-    
-            // h3{
-            //     font-size: 1.3em;
-            // }
-            
+        .seccion-beneficios{            
             p{
                 width: 90%;
-                // font-size: 1em;
-                // margin: auto;
             }
-    
         } //end seccion beneficios
 
 // logos section
@@ -325,8 +319,7 @@ main{
                 width:20vw;
             }
         } //end logos
-        
-        
+             
     } //end main
     
 } //end query
@@ -368,7 +361,6 @@ main{
 
                 form{
                     font-size: .6em;
-                    // width: 500px;
                 }
 
                 .form-control{
@@ -441,16 +433,6 @@ main{
         }//end logos
 
     } //end main
-
-    // main{
-    //     .hero-section{
-    //         max-height: 80vh;
-
-    //         .hero-form, .hero-green-slide, .hero-background{
-    //             min-height: 70vh;
-    //         }
-    //     }
-    // }
 }
 
 // @media (min-width: 1400px){

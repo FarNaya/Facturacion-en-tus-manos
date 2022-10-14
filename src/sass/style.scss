@@ -249,17 +249,17 @@ footer{
     p{
         color: $white;
     }
-    text-decoration: none;
- .fa-brands{
-                    font-size: 1.2em;
-                    color: $darkgrey;
-                    background-color: $white;
-                    width: 22px;
-                    height: 22px;
-                    padding-top: 2px;
-    
-
-}
+    a{
+        text-decoration: none;
+    }
+    .fa-brands{
+        font-size: 1.2em;
+        color: $darkgrey;
+        background-color: $white;
+        width: 22px;
+        height: 22px;
+        padding-top: 2px;
+    }
 }
 
 // MEDIA QUERIES

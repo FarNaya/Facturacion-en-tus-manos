@@ -246,6 +246,28 @@ main{
 // FOOTER
 footer{
     background-color: $darkgrey;
+
+    .footer-logo{
+        img{
+            object-fit: cover;
+        }
+    }
+    
+
+    .informacion-contacto{
+        font-family: $secondary-font-family;
+        letter-spacing: $alt-letter-spacing;
+
+        .website{
+            font-size: .9em;
+        }
+    }
+
+    hr{
+        border: 1px solid $white;
+        width: 95vw;
+    }
+
     p{
         color: $white;
     }
@@ -259,6 +281,10 @@ footer{
         width: 22px;
         height: 22px;
         padding-top: 2px;
+    }
+
+    .terminos-y-privacidad{
+        font-size: .8em;
     }
 }
 

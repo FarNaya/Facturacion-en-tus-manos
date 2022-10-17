@@ -246,6 +246,10 @@ main{
 // FOOTER
 footer{
     background-color: $darkgrey;
+    a{
+        text-decoration: none;
+        color: $white;
+    }
 
     .footer-logo{
         img{
@@ -253,7 +257,6 @@ footer{
         }
     }
     
-
     .informacion-contacto{
         font-family: $secondary-font-family;
         letter-spacing: $alt-letter-spacing;
@@ -271,9 +274,7 @@ footer{
     p{
         color: $white;
     }
-    a{
-        text-decoration: none;
-    }
+   
     .fa-brands{
         font-size: 1.2em;
         color: $darkgrey;
@@ -347,6 +348,19 @@ footer{
         } //end logos
              
     } //end main
+
+    footer{
+        .fa-brands{
+            font-size: 1.4em;
+            width: 26px;
+            height: 26px;
+            padding-top: 3px;
+        }
+    
+        .terminos-y-privacidad{
+            font-size: .9em;
+        }
+    }
     
 } //end query
 
@@ -413,6 +427,26 @@ footer{
         }//end logos
 
     }//end main
+
+    footer{
+
+        .informacion-contacto{    
+            .website{
+                font-size: 1.4em;
+            }
+            .tel{
+                font-size: 1.2em;
+            }
+        }
+
+       
+        .fa-brands{
+            font-size: 1.5em;
+            width: 28px;
+            height: 28px;
+            padding-top: 3px;
+        }
+    }
 }
 @media (min-width: 1200px){
 
